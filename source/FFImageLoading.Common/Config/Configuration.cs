@@ -31,7 +31,7 @@ namespace FFImageLoading.Config
             VerboseLogging = false;
             SchedulerMaxParallelTasks = Math.Min(4, Math.Max(2, (int)(Environment.ProcessorCount / 2d)));
             DiskCacheDuration = TimeSpan.FromDays(30d);
-            TryToReadDiskCacheDurationFromHttpHeaders = true;
+            TryToReadDiskCacheDurationFromHttpHeaders = false;
             ExecuteCallbacksOnUIThread = false;
             StreamChecksumsAsKeys = true;
             AnimateGifs = true;
